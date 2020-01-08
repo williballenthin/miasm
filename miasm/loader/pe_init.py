@@ -35,7 +35,7 @@ class ContentManager(object):
         self.__set__(owner, None)
 
 
-class ContectRva(object):
+class ContentRva(object):
 
     def __init__(self, parent):
         self.parent = parent
@@ -190,7 +190,7 @@ class PE(object):
                  parse_delay=True,
                  parse_reloc=True,
                  wsize=32):
-        self._rva = ContectRva(self)
+        self._rva = ContentRva(self)
         self._virt = ContentVirtual(self)
         self.img_rva = StrPatchwork()
         if pestr is None:
