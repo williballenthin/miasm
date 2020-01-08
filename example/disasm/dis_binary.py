@@ -6,7 +6,7 @@ from miasm.analysis.machine import Machine
 fdesc = open(sys.argv[1], 'rb')
 
 # The Container will provide a *bin_stream*, bytes source for the disasm engine
-# It will prodive a view from a PE or an ELF.
+# It will provide a view from a PE or an ELF.
 cont = Container.from_stream(fdesc)
 
 # The Machine, instantiated with the detected architecture, will provide tools
